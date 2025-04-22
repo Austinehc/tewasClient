@@ -150,14 +150,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function openModal(item, index) {
     const imgSrc = item.querySelector('img').src;
     const title = item.querySelector('h3').textContent;
-    const description = item.querySelector('p').textContent;
+    
     const category = item.getAttribute('data-category');
 
     // Set modal content
     DOM.modalImage.src = imgSrc;
     DOM.modalImage.alt = title;
     DOM.modalTitle.textContent = title;
-    DOM.modalDescription.textContent = description;
+    
     DOM.modalCategory.textContent = category.charAt(0).toUpperCase() + category.slice(1);
 
     // Update current index
@@ -191,13 +191,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const item = currentItems[currentIndex];
     const imgSrc = item.querySelector('img').src;
     const title = item.querySelector('h3').textContent;
-    const description = item.querySelector('p').textContent;
+    
     const category = item.getAttribute('data-category');
 
     DOM.modalImage.src = imgSrc;
     DOM.modalImage.alt = title;
     DOM.modalTitle.textContent = title;
-    DOM.modalDescription.textContent = description;
+    
     DOM.modalCategory.textContent = category.charAt(0).toUpperCase() + category.slice(1);
 }
 
