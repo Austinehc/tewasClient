@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Send form data to backend for email sending
-            fetch('http://localhost:3000/api/send-email', {
+            fetch('https://tewasbackend.onrender.com', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, subject, message })
