@@ -148,26 +148,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function openModal(item, index) {
-        const imgSrc = item.querySelector('img').src;
-        const title = item.querySelector('h3').textContent;
-        const description = item.querySelector('p').textContent;
-        const category = item.getAttribute('data-category');
-        
-        // Set modal content
-        DOM.modalImage.src = imgSrc;
-        DOM.modalImage.alt = title;
-        DOM.modalTitle.textContent = title;
-        DOM.modalDescription.textContent = description;
-        DOM.modalCategory.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-       
-        
-        // Update current index
-        currentIndex = currentItems.indexOf(item);
-        
-        // Show modal
-        DOM.galleryModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
+    const imgSrc = item.querySelector('img').src;
+    const title = item.querySelector('h3').textContent;
+    const description = item.querySelector('p').textContent;
+    const category = item.getAttribute('data-category');
+
+    // Set modal content
+    DOM.modalImage.src = imgSrc;
+    DOM.modalImage.alt = title;
+    DOM.modalTitle.textContent = title;
+    DOM.modalDescription.textContent = description;
+    DOM.modalCategory.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+
+    // Update current index
+    currentIndex = currentItems.indexOf(item);
+
+    // Show modal
+    DOM.galleryModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
 
     function closeModal() {
         DOM.galleryModal.classList.remove('active');
@@ -189,18 +188,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateModalContent() {
-        const item = currentItems[currentIndex];
-        const imgSrc = item.querySelector('img').src;
-        const title = item.querySelector('h3').textContent;
-        const description = item.querySelector('p').textContent;
-        const category = item.getAttribute('data-category');
-        
-        DOM.modalImage.src = imgSrc;
-        DOM.modalImage.alt = title;
-        DOM.modalTitle.textContent = title;
-        DOM.modalDescription.textContent = description;
-        DOM.modalCategory.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-    }
+    const item = currentItems[currentIndex];
+    const imgSrc = item.querySelector('img').src;
+    const title = item.querySelector('h3').textContent;
+    const description = item.querySelector('p').textContent;
+    const category = item.getAttribute('data-category');
+
+    DOM.modalImage.src = imgSrc;
+    DOM.modalImage.alt = title;
+    DOM.modalTitle.textContent = title;
+    DOM.modalDescription.textContent = description;
+    DOM.modalCategory.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+}
 
     function setupAnimations() {
         // Set initial state
