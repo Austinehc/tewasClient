@@ -1,0 +1,237 @@
+/* ================ EQUIPMENT PAGE STYLES ================ */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-light);
+    text-align: center;
+    padding: var(--space-xl) 0;
+    margin-top: 10px; /* Account for fixed header */
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: var(--space-sm);
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Equipment Filter Section */
+.equipment-filter-section {
+    background-color: var(--light-color);
+    padding: var(--space-md) 0;
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: var(--space-xs) var(--space-md);
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Equipment Grid Section */
+.equipment-grid-section {
+    padding: var(--space-xl) 0;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.equipment-card {
+    background-color: var(--text-light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.equipment-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.equipment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.equipment-card:hover .equipment-image img {
+    transform: scale(1.05);
+}
+
+.equipment-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.equipment-card:hover .equipment-overlay {
+    opacity: 1;
+}
+
+.equipment-info {
+    padding: var(--space-md);
+}
+
+.equipment-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-sm);
+    color: var(--dark-color);
+}
+
+.equipment-meta {
+    display: flex;
+    gap: var(--space-md);
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: var(--space-sm);
+}
+
+.equipment-meta i {
+    margin-right: var(--space-xs);
+    color: var(--primary-color);
+}
+
+.equipment-info p {
+    color: #555;
+    margin-bottom: var(--space-md);
+    line-height: 1.6;
+}
+
+.equipment-info .btn {
+    width: 100%;
+    text-align: center;
+}
+
+/* Rental Info Section */
+.rental-info {
+    background-color: var(--light-color);
+    padding: var(--space-xl) 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+}
+
+.info-card {
+    background-color: var(--text-light);
+    padding: var(--space-lg);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.info-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+}
+
+.info-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-sm);
+}
+
+.info-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .filter-options {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: var(--space-sm);
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .filter-btn {
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .equipment-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}

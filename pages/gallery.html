@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Covered | TEWAS Enterprise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/tewas.css"> <!-- Main CSS -->
+    <link rel="stylesheet" href="/styles/gallery.css"> <!-- Page-specific CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +260 967936540</span>
+                <span><i class="fas fa-envelope"></i> tewasenterprises@gmail.com</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <a href="/pages/index.html" class="logo">
+                <span>TEWAS</span> ENTERPRISE
+            </a>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="nav-links">
+                <a href="/pages/index.html">Home</a>
+                <a href="/pages/services.html">Services</a>
+               <!--- <a href="/pages/equipment.html">Equipment</a> -->
+              <!--  <a href="/pages/gallery.html">Gallery</a> -->
+              <a href="/pages/contact.html" class="nav-cta">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Project Gallery</h1>
+            <p>Explore our successful events and installations across Zambia</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter-section">
+        <div class="container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <!-- <button class="filter-btn" data-filter="concerts">Concerts</button>
+                <button class="filter-btn" data-filter="festivals">Festivals</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="community">Community</button> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Concert Projects -->
+                <div class="gallery-item" data-category="concerts">
+                    <img src="/assets/images/absa.jpeg" alt="ABSA Bank Marathon">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>ABSA Bank Marathon</h3>
+                            <p>Complete barrier system for track guidance and safety</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Festival Projects -->
+                <div class="gallery-item" data-category="festivals">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coastal Food Festival">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Coastal Food Festival</h3>
+                            <p>Temporary structures and sanitation for 3-day event</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Projects -->
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tech Conference">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Tech Conference</h3>
+                            <p>Full event infrastructure for 1,500 attendees</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports Projects -->
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Marathon Event">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>City Marathon</h3>
+                            <p>Crowd control barriers along 42km route</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Projects -->
+                <div class="gallery-item" data-category="community">
+                    <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Community Fair">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Community Fair</h3>
+                            <p>Full event setup for annual neighborhood fair</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Projects -->
+                <div class="gallery-item" data-category="concerts">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Arena Concert">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Arena Concert Series</h3>
+                            <p>Barriers and VIP section setup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="festivals">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Music Festival">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Lakeview Music Festival</h3>
+                            <p>Complete event infrastructure for 3 stages</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item" data-category="festivals">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Music Festival">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Lakeview Music Festival</h3>
+                            <p>Complete event infrastructure for 3 stages</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Product Launch">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Product Launch Event</h3>
+                            <p>Custom staging and power solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Stats -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Events Supported</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Cities Covered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1M+</div>
+                    <div class="stat-label">Attendees Safely Managed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="gallery-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">CLIENT FEEDBACK</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"TEWAS provided exceptional service for our music festival. Their barriers and sanitation solutions were top-notch, and their team was professional throughout the event."</p>
+                        <div class="client-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="client-img">
+                            <div>
+                                <h4>James Mwangi</h4>
+                                <span class="client-role">Event Director, Nairobi Festivals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Plan Your Event?</h2>
+                <p>Contact us today to discuss your project requirements</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Get Started</a>
+                    <a href="tel:+260967936540" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h3 class="footer-logo">TEWAS ENTERPRISE</h3>
+                    <p>Providing quality and standerd event equipment solutions across Zambia since 2018.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/pages/index.html">Home</a></li>
+                        <li><a href="/pages/services.html">Services</a></li>
+                       <!-- <li><a href="/pages/equipment.html">Equipment</a></li> -->
+                       <li><a href="/pages/gallery.html">gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                       <!-- <li><i class="fas fa-map-marker-alt"></i> 123 salima Rd, lusaka, Zambia</li> -->
+                        <li><i class="fas fa-phone"></i> +260 96793640</li>
+                        <li><i class="fas fa-phone"></i> +260 96793640</li>
+                        <li><i class="fas fa-envelope"></i> tewasenterprises@gmail.com</li>
+                       <!--<li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</li> -->
+                    </ul>
+                </div>
+                
+               <div class="footer-col footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Crowd Control</li>
+                        <br>
+                        <li>Staging & Flooring</li>
+                        <br>
+                        <li>Tents & Structures</li>
+                        <br>
+                        <li>Event Furniture</li>
+                        <br>
+                        <li>Sanitation Solutions</li>
+                    </ul>
+                </div>
+                            
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 TEWAS Enterprise <br> Byte Tech Labs  Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <img src="" alt="" class="modal-image">
+            <div class="modal-caption">
+                <h3 class="modal-title"></h3>
+                <p class="modal-description"></p>
+                <div class="modal-meta">
+                    <span class="modal-category"></span>
+                    <span class="modal-date"></span>
+                </div>
+            </div>
+        </div>
+        <button class="modal-nav modal-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="modal-nav modal-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script src="/server/tewas.js"></script>
+    <script src="/server/gallery.js"></script>
+</body>
+</html>
